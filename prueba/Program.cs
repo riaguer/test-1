@@ -10,7 +10,8 @@ namespace prueba
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world");
+           ejercicios.Ejercicio1();//el void no devuelve nada asi que para llamarlo hay que ponerlo directamente asi.
+            ejercicios.Ejercicio1();
         }
     }
 }
