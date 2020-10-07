@@ -25,17 +25,58 @@ namespace prueba
             }
         }
         //Ejercicio:Hacer un programa que imprima si un numero es primo o no
-        public static bool IsPrime(int number)
+
+        public static void Ejercicio3(int number)
         {
-            int i = 2;
-            while (i > number)
+            bool is_prime;
+            is_prime = Misc.IsPrime(number);
+            if (is_prime == true)
+                System.Console.WriteLine("Es primo");
+            else
+                System.Console.WriteLine("No es primo");
+        }
+        //Ejercicio 4 hacer un bucle que imprima 5,4,3,2,1,0,-1,-2
+        public static void Ejercicio4(int number)
+        {
+            for(int i = 0; i < 90; i++)
             {
-                if((number%i)==0)
-                    return false;
-                i++;
+                System.Console.WriteLine(5-i);
             }
-            return true;
+                
+            int contador = 0;
+            while (contador < 90)
+            {
+                contador++;
+            }
+        }
+        //Ejercicio que imprime -0,1,-2,3,-4,5,-6,7,-8,9,-10;
+        public static void Ejercicio5()
+        {
+            for(int i = 0; i < 90; i++)
+            {
+                if ((i % 2) == 0)
+                    System.Console.WriteLine(-i);
+                else
+                    System.Console.WriteLine(i);
+            }
+        }
+        //Ejercicio que imprime 0,1,1,2,3,5,8,13,34(Fibonacci)
+        public static void Ejercicio6()
+        {
+            int i = 0;
+            int n1 = 0;
+            int n2 = 1;
+            System.Console.WriteLine(n1);
+            System.Console.WriteLine(n2);
+            while (i < 90) 
+            { 
+                n2 = n1 + n2;
+                n1 = n2 - n1;
+                i++;
+                System.Console.WriteLine(n2);
+            }
         }
     }
-}
+}//int solo guarda hasta dosmil millones si quieres mas que esos pones long y solucionado;
 //while(condition)(tiene que ser un bool)
+//No te olvides de llamarlo en Program.cs (ejercicios.Ejercicio6(); por ejemplo) 

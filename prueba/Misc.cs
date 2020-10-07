@@ -51,6 +51,17 @@ namespace prueba
             double a;
             return  a = System.Math.PI;
         }
+        public static bool IsPrime(int number)
+        {
+            int i = 2;
+            while (i > number)
+            {
+                if ((number % i) == 0)
+                    return false;
+                i++;
+            }
+            return true;
+        }
         //tienes que hacer una funcion que diga si dos circulos se chocan es decir la suma de los radios Ej:- 5 + 5 = 10 
         //es mayor que la suma de la distancia de punto central a punto central de cada uno de los circulos entonces 
         //los circulos se chocan

@@ -10,8 +10,14 @@ namespace prueba
     {
         static void Main(string[] args)
         {
-           ejercicios.Ejercicio1();//el void no devuelve nada asi que para llamarlo hay que ponerlo directamente asi.
-            ejercicios.Ejercicio1();
+            student s1,s2;
+            s1 = new student();
+            s2 = new student();
+
+            s1.name = "alex";
+            s2.name = "cristian";
+
+            string ss = s1.getNameTwice();
         }
     }
 }
